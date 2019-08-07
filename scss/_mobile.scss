@@ -1,0 +1,154 @@
+// Widesceens
+@include mediaXl {
+  main {
+  }
+}
+
+// Desktop & Laptops
+@include mediaLg {
+  main {
+    grid-template-areas:
+      "home-logo"
+      "home-info";
+    grid-template-columns: 1fr;
+
+    &#home {
+      padding-top: 5vh;
+    }
+
+    &#pictures {
+      .picture-item {
+        width: 50vw;
+        height: 44vh;
+      }
+    }
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 20px;
+  }
+
+  .menu-branding {
+    height: 0vh;
+    transform: translate3d(-100%, 0, 0);
+    border-bottom: 5px solid $secondary-color;
+  }
+}
+
+// Tables and small Laptops
+@include mediaMd {
+  p {
+    font-size: 1.3rem;
+  }
+
+  // show menu fullscreen and entry from right
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 20px;
+  }
+
+  .menu-branding {
+    height: 0vh;
+    transform: translate3d(-100%, 0, 0);
+    border-bottom: 5px solid $secondary-color;
+  }
+
+  main {
+    &#home {
+      padding-top: 5vh;
+    }
+    align-items: center;
+    text-align: center;
+
+    grid-template-areas:
+      "home-logo"
+      "home-info";
+    grid-template-columns: 1fr;
+
+    .lg-heading {
+      line-height: 2;
+      margin-bottom: 1rem;
+    }
+    .home-logo {
+      .logo {
+        width: 337.5px;
+        height: 376.5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+    .home-info {
+      padding-top: 0.5rem;
+    }
+
+    &#pictures {
+      .picture-item {
+        width: 50vw;
+        height: 44vh;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  p {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding: 0;
+    #home {
+      .home-info {
+        padding: 0rem;
+      }
+
+      .home-logo {
+        margin: auto;
+      }
+    }
+    .home-logo {
+      .logo {
+        width: 225px;
+        height: 251px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &#pictures {
+      .picture-item {
+        width: 100vw;
+        height: 50vh;
+        background-color: white;
+
+        padding: 0;
+      }
+    }
+  }
+}
