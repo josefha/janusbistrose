@@ -1,4 +1,10 @@
 // Widesceens
+@include mediaXXl {
+  main {
+    padding: 200px;
+  }
+}
+
 @include mediaXl {
   main {
   }
@@ -102,7 +108,7 @@
         background-position: center center;
       }
     }
-    .home-info {
+    .home-info .contact-info {
       padding-top: 0.5rem;
     }
 
@@ -122,14 +128,14 @@
 
   main {
     padding: 0;
-    #home {
-      .home-info {
-        padding: 0rem;
-      }
+    .home-info {
+      padding: 0.5;
+      padding-top: 0;
+    }
 
-      .home-logo {
-        margin: auto;
-      }
+    .contact-info {
+      padding: 0.5;
+      padding-top: 0;
     }
     .home-logo {
       .logo {

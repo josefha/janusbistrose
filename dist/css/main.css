@@ -154,7 +154,7 @@ main {
   display: grid;
   grid-template-areas: "home-logo home-info";
   grid-template-columns: 1fr 1fr;
-  padding-top: 25vh; }
+  padding-top: 12vh; }
   main .home-logo {
     grid-area: home-logo;
     margin: auto; }
@@ -169,7 +169,8 @@ main {
     grid-area: home-info;
     padding: 3rem; }
   main .contact-info {
-    margin: 4rem; }
+    padding: 3rem;
+    margin: auto; }
     main .contact-info .icon-link {
       display: inline; }
   main .icons {
@@ -201,6 +202,10 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center; }
+
+@media screen and (min-width: 2000px) {
+  main {
+    padding: 200px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main {
@@ -263,7 +268,7 @@ main {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center; }
-    main .home-info {
+    main .home-info .contact-info {
       padding-top: 0.5rem; }
     main#pictures .picture-item {
       width: 50vw;
@@ -274,10 +279,12 @@ main {
     font-size: 1.2rem; }
   main {
     padding: 0; }
-    main #home .home-info {
-      padding: 0rem; }
-    main #home .home-logo {
-      margin: auto; }
+    main .home-info {
+      padding: 0.5;
+      padding-top: 0; }
+    main .contact-info {
+      padding: 0.5;
+      padding-top: 0; }
     main .home-logo .logo {
       width: 225px;
       height: 251px;

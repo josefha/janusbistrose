@@ -85,7 +85,7 @@ main {
   display: grid;
   grid-template-areas: "home-logo home-info";
   grid-template-columns: 1fr 1fr;
-  padding-top: 25vh;
+  padding-top: 12vh;
 
   .home-logo {
     grid-area: home-logo;
@@ -107,7 +107,8 @@ main {
   }
 
   .contact-info {
-    margin: 4rem;
+    padding: 3rem;
+    margin: auto;
 
     .icon-link {
       display: inline;
