@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "janusbistrose",
   "version": "1.0.0",
-  "description": "My Portfolio",
+  "description": "janus bistro website",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
